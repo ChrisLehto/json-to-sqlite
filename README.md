@@ -1,2 +1,20 @@
-# json-to-sqlite
-Simple Python tool that ingests JSON files into a SQLite database with version tracking and duplicate detection. Demonstrates database schema design, checksum-based deduplication, and document versioning.
+# JSON to SQLite
+
+A simple Python tool that ingests JSON files into a SQLite database with:
+
+- **Checksum deduplication** – skips identical files automatically  
+- **Version tracking** – creates a new version whenever content changes  
+- **Document keys** – groups versions by filename stem (or custom key)  
+
+This demonstrates a clean, lightweight approach to **data persistence** using Python’s standard library only (no external dependencies). It’s a practical starting point for projects that need to track file history, build datasets for analysis, or serve as input for future AI/ML pipelines.
+
+## Usage
+### Store files into the database
+python json-to-sqlite.py store filename.json
+python json-to-sqlite.py store another.json
+
+### List all documents with their latest versions
+python json-to-sqlite.py list
+
+### List all versions of a single document
+python json-to-sqlite.py versions filename
