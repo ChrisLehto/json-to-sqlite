@@ -10,12 +10,12 @@ This demonstrates a clean, lightweight approach to **data persistence** using Py
 
 ```bash
 ## Usage
-### Store files into the database
+# Store files into the database
 python json-to-sqlite.py store filename.json
 python json-to-sqlite.py store another.json
 
-### List all documents with their latest versions
+# List all documents with their latest versions
 python json-to-sqlite.py list
 
-### List all versions of a single document
+# List all versions of a single document
 python json-to-sqlite.py versions filename
