@@ -19,3 +19,12 @@ python json-to-sqlite.py list
 
 # List all versions of a single document
 python json-to-sqlite.py versions filename
+```
+
+### No JSON Files? Convert XML First
+If you don’t have a JSON file available for testing,
+you can use the Python XML Parser project:
+https://github.com/ChrisLehto/python-xml-parser
+
+It converts any XML file into JSON, which can then
+be stored using this tool.
