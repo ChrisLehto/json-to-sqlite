@@ -8,6 +8,7 @@ A simple Python tool that ingests JSON files into a SQLite database with:
 
 This demonstrates a clean, lightweight approach to **data persistence** using Python’s standard library only (no external dependencies). It’s a practical starting point for projects that need to track file history, build datasets for analysis, or serve as input for future AI/ML pipelines.
 
+```bash
 ## Usage
 ### Store files into the database
 python json-to-sqlite.py store filename.json
